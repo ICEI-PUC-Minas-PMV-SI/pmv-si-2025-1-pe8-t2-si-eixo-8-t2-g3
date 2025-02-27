@@ -1,4 +1,4 @@
-# Título do Projeto
+# Garonce - Gestão Inteligente
 
 `CURSO: Sistemas de Informação`
 
@@ -6,19 +6,15 @@
 
 `SEMESTRE: 8º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto visa melhorar o gerenciamento das obras da empresa Garonce Soluções Fotovoltaicas, trazendo clareza, automação e eficiência. Um sistema informatizado permitirá o lançamento estruturado de tarefas, controle de atividades e registro de imagens diárias. Além disso, incluirá alertas automatizados e um dashboard dinâmico, otimizando processos internos e proporcionando uma visão estratégica das obras em andamento.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Isabela Bersan
+* Renan Rodrigues
 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Simone Fernandes Queiroz
 
