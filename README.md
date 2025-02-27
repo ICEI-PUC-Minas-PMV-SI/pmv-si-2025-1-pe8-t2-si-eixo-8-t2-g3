@@ -18,3 +18,13 @@ O projeto visa melhorar o gerenciamento das obras da empresa Garonce Soluções 
 
 * Simone Fernandes Queiroz
 
+# Planejamento
+
+| Etapa         | Atividades |
+|  :----:   | ----------- |
+| ETAPA 1         |[Definição da empresa e estudo do seu mercado, processos e sistemas](docs/contexto.md) <br> |
+| ETAPA 2         |[Plano de Inteligência Competitiva (IC)](docs/conhecendo-dados.md) <br> |
+| ETAPA 3         |[Desenvolvimento da solução de SI](docs/construindo-modelos.md) |
+| ETAPA 4        |[Apresentação do Projeto](docs/implantação-apresentacao.md) <br>  |
+| ETAPA 5        |[Planejamento Estratégico de TI](docs/implantação-apresentacao.md) <br>  |
+
