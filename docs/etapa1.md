@@ -94,7 +94,7 @@ Por fim, o processo termina quando o serviço é devidamente finalizado e regist
  
 •	**Descrição dos sistemas existentes:** Planilha em Excel
 
-•	**Nível de maturidade do sistema existentes:** Baixo (Inicial). Preenchimento manual.
+•	**Nível de maturidade do sistema existentes:** O sistema apresenta um nível de maturidade baixo (Inicial), com preenchimento manual das informações, baixa segurança, pouca visibilidade para os usuários e falta de padronização dos dados. Além disso, há risco de corrompimento dos arquivos e ausência de backup, comprometendo a confiabilidade e a recuperação das informações. Para melhorar sua eficiência, é essencial adotar medidas que aumentem a segurança, automação e padronização, reduzindo riscos operacionais e garantindo maior controle e integridade dos dados.
 
 •	**Identificação de oportunidades de melhoria do processo:** Identificado junto ao cliente a oportunidade de criar um eco sistema de monitoramento, que permitirá melhor detalhamento de etapas de demandas e acompanhamento de prazos através da utilização integrada de ferramentas No Code (Microsoft Forms e Planner) e Low Code (Power Automate e Power BI), possibilitando criar uma interface de cadastro e planejamento, integrados a um dashboard para análise de resultados.
 
