@@ -71,6 +71,7 @@ Apesar do crescimento o setor enfrenta desafios, como limitações na infraestru
 
 •	**Análise da matriz SWOT:**
 
+![Matriz SWOT](img/swot.png)
  
 ## 1.4 Análise de Processos e Sistema
 •	**Processos atuais:** Atualmente o processo entrada de demandas ocorre por prospect ou através da rede de contatos (Celular, e-mail e site). O acompanhamento de demandas e programação de obra é feito através de preenchimento semanal de uma planilha. <br/>
