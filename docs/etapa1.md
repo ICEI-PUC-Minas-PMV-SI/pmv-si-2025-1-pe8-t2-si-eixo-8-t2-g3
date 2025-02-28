@@ -89,6 +89,8 @@ Uma vez que a equipe está alocada, a Execução da Demanda acontece. Após a ex
 
 Por fim, o processo termina quando o serviço é devidamente finalizado e registrado. <br/>
 
+![Fluxo de Processos](img/fluxo.png)
+
  
 •	**Descrição dos sistemas existentes:** Planilha em Excel
 
