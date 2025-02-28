@@ -22,9 +22,9 @@ O projeto visa melhorar o gerenciamento das obras da empresa Garonce Soluções 
 
 | Etapa         | Atividades |
 |  :----:   | ----------- |
-| ETAPA 1         |[Definição da empresa e estudo do seu mercado, processos e sistemas](docs/contexto.md) <br> |
-| ETAPA 2         |[Plano de Inteligência Competitiva (IC)](docs/conhecendo-dados.md) <br> |
-| ETAPA 3         |[Desenvolvimento da solução de SI](docs/construindo-modelos.md) |
-| ETAPA 4        |[Apresentação do Projeto](docs/implantação-apresentacao.md) <br>  |
-| ETAPA 5        |[Planejamento Estratégico de TI](docs/implantação-apresentacao.md) <br>  |
+| ETAPA 1         |[Definição da empresa e estudo do seu mercado, processos e sistemas](docs/etapa1.md) <br> |
+| ETAPA 2         |[Plano de Inteligência Competitiva (IC)](docs/etapa2.md) <br> |
+| ETAPA 3         |[Desenvolvimento da solução de SI](docs/etapa3.md) |
+| ETAPA 4        |[Apresentação do Projeto](docs/etapa4.md) <br>  |
+| ETAPA 5        |[Planejamento Estratégico de TI](docs/etapa5.md) <br>  |
 
