@@ -51,99 +51,146 @@ Para a decisão crítica de "Gestão de Projetos e Obras: Priorização das obra
 5.	Manter prazos.
 6.	Obter vantagem competitiva.
 
+## 6	IDENTIFICAÇÃO DAS NECESSIDADES DE INFORMAÇÃO 
+
+### 6.1 Mapeamento dos tipos de informação
+
+Para o gerenciamento de obras os dados necessários são:
+•	**Status das obras**: Projetos não iniciados, em andamento e finalizados.<br/>
+•	**Capacidade operacional**: Disponibilidade da equipe.<br/>
+•	**Cronograma e prazos**: Previsão de entrega da obra.<br/>
+•	**Localização e logística**: Localização das obras.<br/>
+•	**Critérios de priorização**: Regras utilizadas para definir quais obras devem ser priorizadas.<br/>
+
+### 6.2 Priorização
+
+As informações mais críticas para responder às KIQs e garantir a otimização do gerenciamento de projetos e obras são:
+1.	**Disponibilidade da equipe e materiais** – Impacta diretamente no cumprimento dos prazos.
+2.	**Status das obras** – Permite um acompanhamento atualizado do andamento dos projetos.
+3.	**Cronograma e prazos críticos** – Essencial para evitar atrasos e penalizações contratuais.
+4.	**Logística e deslocamento** – Reduz custos e melhora a eficiência operacional.
+
+### 6.3 Fontes de informação
+Atualmente, a empresa gerencia as obras por meio de planilhas em Excel. Como a empresa não possui um sistema estruturado, as principais fontes de informação seriam:<br/>
+•	**Planilhas de gestão de obras (Excel)**: Contêm os dados operacionais sobre o andamento dos projetos.<br/>
+•	**Relatórios internos**: Compilação manual de informações sobre execução, prazos e desafios enfrentados.<br/>
+•	**Registros financeiros**: Planilhas ou documentos sobre fluxo de caixa e faturamento por obra.<br/>
+•	**Feedback da equipe**: Informações qualitativas sobre dificuldades enfrentadas e melhorias necessárias.<br/>
+
+## 7	PLANEJAMENTO DA COLETA E ARMAZENAMENTO DE DADOS
+
+1.	**Definição de métodos de coleta**:<br/>
+•	**Microsoft Forms**: Cadastro das demandas, criação de ordem de serviço e detalhamento do pedido.<br/>
+•	**Planner**: Para inclusão de informações adicionais e status de atendimento atualizados de cada demanda.<br/>
+•	**Power Automate**: Para integração dos dados preenchidos no Forms, incluindo automaticamente os pedidos no backlog do Planner e gerando um extrato desses dados numa pasta no SharePoint.<br/>
+•	**SharePoint**: Para centralizar a base de dados, permitindo a coleta dos dados e que o Power BI consuma informações atualizadas para análise.<br/>
+
+2.	**Estruturação do armazenamento**:<br/>
+•	**Planilha**: Após o processo de coleta do forms + planner.<br/>
+•	**Banco de dados**: Utilização do SharePoint para armazenamento centralizado e seguro dos dados.<br/>
+•	**Ferramentas de BI**: Power BI para visualização e análise dos dados.<br/>
+
+3.	**Planejamento operacional**:<br/>
+•	**Periodicidade da coleta**: Diário<br/>
+•	**Papéis dos responsáveis**: A coleta e atualização dos dados em cada etapa do processo ficará sob responsabilidade do proprietário e seu time administrativo.<br/>
+•	**Automatizações**:  Automação com Power Automate para garantir a eficiência e precisão na coleta e integração dos dados.<br/>
+
+## 8	ANÁLISE DE DADOS E REGISTRO DE INFORMAÇÕES
+
+1)	Escolha das ferramentas de análise:<br/>
+•	**Planner**: Para acompanhamento das demandas no modelo Kanban.<br/>
+•	**Power BI**: Para criação das visualizações e geração de insights.<br/>
+•	**Power Automate**: Para integração dos dados preenchidos no Forms, incluindo automaticamente os pedidos no backlog do Planner. Gerando uma base de dados consolidada das duas ferramentas numa pasta no SharePoint para que o Power BI possa consumir.<br/>
+•	**SharePoint**: Para armazenamento da base de dados oriunda do Forms + Planner.<br/>
+
+2)	Estratégia de análise:<br/>
+•	**Análise de tendências**: Identificar padrões e mudanças ao longo do tempo para prever demandas futuras, acompanhar o tempo e as fases de atendimento e ajustar a alocação de recursos.<br/>
+•	**Segmentação de clientes**: Dividir os clientes em grupos com características semelhantes para personalizar o atendimento e melhorar a eficiência.<br/>
+•	**Modelagem preditiva**: Utilizar algoritmos para prever resultados futuros, como prazos de conclusão de obras e necessidades de recursos.<br/>
+
+3)	Geração de insights:<br/>
+•	**Transformação de dados brutos**: Utilizar as ferramentas escolhidas para processar e analisar os dados coletados, convertendo-os em informações úteis que respondam às KIQs.<br/>
+•	**Relatório**:<br/>
+o	Ferramentas utilizadas para análise: Planner, Power BI, Power Automate, SharePoint.<br/>
+o	Justificativa da escolha das ferramentas de análise:<br/>
+**Planner**: Permite o acompanhamento visual das demandas utilizando o modelo Kanban, facilitando a gestão de projetos.<br/>
+**Power BI**: Oferece visualizações interativas e dinâmicas, transformando dados em insights acionáveis.<br/>
+**Power Automate**: Automatiza a integração das fontes de origem dos dados.<br/>
+**SharePoint**: Armazena a base de dados consolidada, permitindo que o Power BI consuma informações atualizadas para análise.<br/>
+
+**Referência aos processos e sistemas existentes**: Atualmente, a Garonce Soluções Fotovoltaicas utiliza planilhas Excel para o acompanhamento de demandas e programação de obras, o que apresenta limitações em termos de segurança, visibilidade e padronização dos dados. A implementação das ferramentas Microsoft Forms, Planner, Power BI, Power Automate e SharePoint permitirá uma análise mais eficiente e segura, com dados estruturados. Além de proporcionar uma visão mais clara e estratégica das operações da empresa.<br/>
+
+**Oportunidades de melhoria**: A criação de um ecossistema de monitoramento integrado com essas ferramentas permitirá um melhor detalhamento das etapas de demandas e acompanhamento de prazos, resultando em uma gestão mais eficiente e assertiva. Necessitando de apenas um tipo de licença para gestão de todo o ecossistema.<br/>
 
 
 
-## 1.2 Empresa do Projeto
+## 9	DISSEMINAÇÃO E UTILIZAÇÃO DAS INFORMAÇÕES 
 
-•	**Sobre a empresa:** Empresa especializada em instalação, manutenção e gestão de usinas fotovoltaicas. Atua em todo o território nacional, com foco na região Sudeste.
+1)	Será desenvolvido um dashboard com o objetivo de otimizar a gestão das obras, proporcionando à empresa acesso aos insights necessários para aprimorar suas operações e contribuindo para uma gestão mais eficiente e estratégica.
 
-•	**Localização:** Rua Benedito Quintino, 112, centro, Jaboticatubas/MG
+2)	A ferramenta a ser utilizada para a construção do dashboard será o Power BI, considerando que o Power Automate será empregado para automações e o SharePoint para o armazenamento de dados, todas essas ferramentas fazem parte do ecossistema Microsoft.<br/>
+Dessa forma, com o Power BI, teremos:<br/>
+   •	**Automação e Integração**: O Power BI permite a conexão com diversas fontes de dados (Excel, SharePoint, Planner, Forms, etc.), reduzindo o trabalho manual.<br/>
+   •	**Visualização Interativa**: Os dashboards possibilitam análises dinâmicas, facilitando a tomada de decisão em tempo real.<br/>
+   •	**Acessibilidade e Centralização**: Os dados são armazenados no SharePoint e consumidos diretamente pelo Power BI, garantindo acesso seguro e atualizado para os tomadores de decisão.<br/>
+   •	**Eficiência e Redução de Erros**: A automação do fluxo de dados via Power Automate minimiza inconsistências e melhora a confiabilidade das informações.<br/>
+3)	Para assegurar que os insights gerados sejam efetivamente utilizados nas decisões estratégicas, serão aplicados os seguintes critérios:<br/>
+   •	**Relevância dos Dados** – As informações apresentadas devem estar alinhadas às perguntas-chave de inteligência (KIQs).<br/>
+   •	**Atualização Contínua** – O Power BI consumirá dados atualizados diretamente do SharePoint, evitando desatualizações.<br/>
+   •	**Acessibilidade e Facilidade de Uso** – Os dashboards serão intuitivos, garantindo que os usuários possam explorar os dados sem necessidade de conhecimento técnico avançado.<br/>
+   •	**Monitoramento de Uso** – A análise de acessos ao Power BI permitirá identificar se os relatórios estão sendo consultados e quais informações são mais utilizadas.<br/>
 
-•	**Histórico:** Empresa fundada em 2021 ainda como MEI e há dois anos enquadrada no SIMPLES como LTDA com sociedade unipessoal.
+4)	As informações geradas pelo Power BI serão direcionadas para diferentes setores dentro da empresa, garantindo que cada área tenha acesso aos insights necessários para otimizar suas operações:
 
-•	**Setor de atuação:** Energia solar.
+1.	**Tomadores de Decisão (Diretoria)**
+ •	Priorização de investimentos e projetos estratégicos.<br/>
+ •	Visão consolidada do desempenho operacional <br/>
+2.	**Gestores de Projetos e Obras**
+ •	Monitoramento do status das obras.<br/>
+ •	Identificação de gargalos operacionais.<br/>
+ •	Gestão da disponibilidade de equipes e materiais.<br/>
+3.	**Equipe de Vendas e Comercial**
+ •	Análise da demanda de novos projetos.<br/>
+ •	Acompanhamento da viabilidade financeira das obras.<br/>
+4.	**Time de Operações e Logística**
+ •	Otimização do deslocamento da equipe.<br/>
+ •	Garantia da entrega no prazo.<br/>
 
-•	**Sociedade:** Unipessoal, enquadramento no SIMPLES NACIONAL.
+## 10	AVALIAÇÃO DO PROCESSO DE IC
 
-•	**Estrutura:** 1 escritório, 3 carros, ferramentas para 3 frentes de trabalhos.
+1)	Iremos avaliar ao final do desenvolvimento do projeto se o processo foi eficiente, bem planejado e estruturado, garantindo que todas as etapas desde a identificação das necessidades até a disseminação dos insights foram conduzidas de maneira estratégica e orientada a resultado, bem como se foi gerado valor à empresa parceira.
 
-•	**Porte:** Pequeno porte.
+2)	Será realizada uma pesquisa de satisfação com o cliente, a fim de entender se o projeto promoveu maior visibilidade, clareza e controle sobre a gestão das obras, possibilitando decisões mais assertivas e um entendimento mais preciso das necessidades do cliente.
 
-•	**Número de empregados:** 100% com prestação de serviços com 6 funcionários fixos e 2 esporádicos.
+3)	Com base na avaliação do processo e no feedback dos usuários finais, identificaremos oportunidades de aprimoramento nas etapas de desenvolvimento, coleta e análise de dados, bem como na comunicação dos insights gerados. Buscaremos otimizar a eficiência e a estruturação do fluxo de trabalho, garantindo maior clareza nas entregas e alinhamento com as expectativas do cliente. Além disso, exploraremos possíveis melhorias tecnológicas para tornar o processo mais ágil e preciso, elevando a qualidade e aplicabilidade das informações fornecidas.
 
-## 1.3 Análise de Mercado
+## 11	COMPLIANCE DE TI E SEGURANÇA DA INFORMAÇÃO
 
-A Garonce Soluções Fotovoltaicas é uma empresa brasileira especializada em soluções de energia solar, oferecendo uma variedade de serviços que abrangem desde a instalação de sistemas fotovoltaicos até a manutenção e suporte técnico. Com sede em Jaboticatubas, Minas Gerais, a empresa destaca-se por fornecer alternativas sustentáveis que promovem economia significativa na conta de luz dos consumidores, podendo alcançar até 95% de redução nos custos energéticos. <br/>
-<br/>
-**Serviços Oferecidos:** <br/>
-<br/>
-•	**Energia Solar Fotovoltaica:** Instalação de sistemas capazes de suprir todas as necessidades elétricas de residências e estabelecimentos comerciais, convertendo a energia solar em eletricidade utilizável.<br/>
-•	**Aquecedores Solares:** Soluções para aquecimento de água em chuveiros e torneiras, utilizando energia solar térmica, além de usinas térmicas solares para geração de eletricidade através de vapor produzido.<br/>
-•	**Aquecedores para Piscinas:** Tecnologia que permite o uso de piscinas em qualquer estação do ano, mantendo a água em temperaturas agradáveis mesmo durante o inverno.<br/>
-•	**Bombas Solares:** Sistemas de bombeamento que utilizam energia solar para captar água de reservatórios, poços ou aquíferos, eliminando a necessidade de baterias estacionárias.<br/>
-•	**Manutenção e Prestação de Serviços:** Serviços técnicos periódicos para garantir a eficiência e durabilidade dos sistemas instalados, incluindo verificações de conexões, ajustes e aperto de terminais e parafusos. <br/>
-<br/>
-**Desafios do Setor de Energia Solar no Brasil:** <br/>
-<br/>
-Apesar do crescimento expressivo da energia solar no país, o setor enfrenta desafios significativos: <br/>
-•	**Falta de Mão de Obra Qualificada:** A rápida expansão da demanda por instalações solares revelou uma escassez de profissionais capacitados, exigindo que empresas invistam em treinamento e adaptação de trabalhadores de outras áreas.<br/>
-•	**Limitações na Infraestrutura de Transmissão:** O aumento na produção de energia renovável tem sobrecarregado a rede elétrica nacional, levando a cortes na distribuição de energia e impactando negativamente os produtores, especialmente nas regiões com gargalos de transmissão. <br/>
-<br/>
-**Oportunidades no Setor de Energia Solar:** <br/>
-<br/>
-Apesar dos desafios, diversas oportunidades impulsionam o crescimento da energia solar no Brasil:<br/>
-<br/>
-•	**Iniciativas Comunitárias Sustentáveis:** Projetos como o desenvolvido na favela Morro da Babilônia, no Rio de Janeiro, demonstram o potencial da energia solar para fornecer eletricidade sustentável a comunidades de baixa renda, ampliando o acesso e promovendo inclusão energética. <br/>
-•	**Investimentos em Infraestrutura Energética:** Empresas como a Enel estão comprometidas em investir na melhoria e expansão das redes de distribuição no Brasil, visando renovar concessões e atender à crescente demanda por energia limpa e confiável. <br/>
-<br/>
-A Garonce Soluções Fotovoltaicas, inserida nesse contexto, posiciona-se como uma fornecedora de soluções sustentáveis e inovadoras, contribuindo para a expansão da energia solar no Brasil e enfrentando os desafios do setor com profissionalismo e dedicação.
+1.	Mapeamento de requisitos regulatórios:
 
-**Principais métricas e tendências do mercado:**
+•	**LGPD**: Garantir que todos os dados pessoais coletados e processados estejam em conformidade com a legislação brasileira.<br/>
+•	**GDPR**: Implementar diretrizes europeias para proteção de dados, como consentimento explícito e direito ao esquecimento.<br/>
+•	**ISO 27001**: Adotar um Sistema de Gestão de Segurança da Informação (SGSI) para identificar, avaliar e mitigar riscos de segurança.<br/>
 
-O mercado de energia solar no Brasil tem apresentado crescimento significativo nos últimos anos, consolidando-se como uma das principais fontes de energia renovável do país.
+2.	Políticas de segurança:
 
-Em 2024, a energia solar no Brasil atingiu uma capacidade instalada de 53 gigawatts (GW), representando um aumento de aproximadamente 40% em relação aos 37 GW registrados em 2023. Esse crescimento posiciona a energia solar como responsável por 21,9% da matriz elétrica nacional até fevereiro de 2025.
+•	Anonimização de dados: Garantir que dados pessoais não possam ser associados a indivíduos específicos.<br/>
+•	Controle de acesso: Estabelecer diretrizes para garantir que apenas pessoas autorizadas possam acessar dados sensíveis.<br/>
 
-Já a Geração Distribuída se destacou com 8,51 GW de potência instaladas em 2024, demonstrando recuperação e o fortalecimento do setor fotovoltaico no Brasil. Além disso, o número de transações de fusões e aquisições em Geração Distribuída dobrou, registrando 14 operações e envolvendo 248 usinas, indicando um mercado dinâmico e em expansão.
+3.	Monitoramento contínuo:
 
-**Tendencias Tecnológicas e de Mercado:** <br/>
-•	**Avanços em Captação e Armazenamento:** Pesquisas indicam que o uso de nanocamadas transparentes podem elevar a eficiência dos equipamentos fotovoltaicos para cerca de 26%, tornando a geração de energia mais econômica. <br/>
-•	**Desenvolvimento Global da Energia Solar:** Em 2024, módulos fotovoltaicos de 610 Wp e 585 Wp ganharam destaque, com células bifaciais tornando a produção mais eficiente e econômica. <br/>
-•	**Crescimento Global da Energia Solar:** Estima-se que a energia fotovoltaica representará 8,3% do consumo global de eletricidade em 2024, um aumento em relação aos 5,4% de 2023, evidenciando a eficiência e a crescente adoção dessa fonte energética. <br/>
+•	Avaliação e auditoria: Realizar auditorias regulares para garantir a conformidade contínua.<br/>
+•	Conformidade: Implementar mecanismos de monitoramento para avaliar a eficácia das políticas de segurança.<br/>
 
-Apesar do crescimento o setor enfrenta desafios, como limitações na infraestrutura de transmissão, que podem restringir a entrega de energia gerada por fontes renováveis. Entretanto, oportunidades se apresentam com investimentos em infraestrutura energética e iniciativas comunitárias sustentáveis, ampliando o acesso à energia limpa e promovendo inclusão energética.
+Aplicações no contexto do projeto:
 
-•	**Análise da matriz SWOT:**
+•	**Microsoft Forms**: Garantir que os formulários de coleta de dados estejam em conformidade com a LGPD e GDPR, incluindo consentimento explícito dos usuários.<br/>
+•	**Planner**: Controlar o acesso às informações sensíveis, garantindo que apenas membros autorizados da equipe possam visualizar e editar os dados.<br/>
+•	**Power BI**: Implementar políticas de segurança para proteger os dashboards e relatórios, garantindo que os dados sejam acessados apenas por pessoas autorizadas.<br/>
+•	**Power Automate**: Automatizar processos de conformidade, como a anonimização de dados e a geração de relatórios de auditoria.<br/>
+•	**SharePoint** : Utilizar o SharePoint para armazenar dados de forma segura, garantindo que todas as informações estejam protegidas e em conformidade com as normas de segurança.<br/>
 
-![Matriz SWOT](img/swot.png)
- 
-## 1.4 Análise de Processos e Sistema
-•	**Processos atuais:** Atualmente o processo entrada de demandas ocorre por prospect ou através da rede de contatos (Celular, e-mail e site). O acompanhamento de demandas e programação de obra é feito através de preenchimento semanal de uma planilha. <br/>
-
-•	**Diagrama de fluxo de processos:**
-
-O processo do gerenciamento dos serviços da empresa se inicia com o Atendimento ao Cliente. Após essa etapa, ocorre uma verificação para determinar se o Negócio foi fechado. <br/>
-•	Se sim, o próximo passo é a Realização do Contrato, em relação aos serviços que serão prestados. Após isso, o serviço é inserido na planilha de controle/gerenciamento. <br/>
-•	Se não, o fluxo apenas se encerra. <br/>
-
-Caso o contrato tenha sido realizado, o processo segue para a fase de execução do serviço, que ocorre na Área 2. Primeiro, há o Agendamento do Serviço, seguido da Alocação da Equipe Responsável pela demanda.
-Uma vez que a equipe está alocada, a Execução da Demanda acontece. Após a execução, há uma verificação se o Serviço foi Finalizado: <br/>
-•	Se sim, o processo se encerra. <br/>
-•	Se não, a execução retorna para ajustes e refinamentos até que o serviço esteja concluído. <br/>
-
-Por fim, o processo termina quando o serviço é devidamente finalizado e registrado. <br/>
-
-![Fluxo de Processos](img/fluxo.png)
-
- 
-•	**Descrição dos sistemas existentes:** Planilha em Excel
-
-•	**Nível de maturidade do sistema existentes:** O sistema apresenta um nível de maturidade baixo (Inicial), com preenchimento manual das informações, baixa segurança, pouca visibilidade para os usuários e falta de padronização dos dados. Além disso, há risco de corrompimento dos arquivos e ausência de backup, comprometendo a confiabilidade e a recuperação das informações. Para melhorar sua eficiência, é essencial adotar medidas que aumentem a segurança, automação e padronização, reduzindo riscos operacionais e garantindo maior controle e integridade dos dados.
-
-•	**Identificação de oportunidades de melhoria do processo:** Identificado junto ao cliente a oportunidade de criar um eco sistema de monitoramento, que permitirá melhor detalhamento de etapas de demandas e acompanhamento de prazos através da utilização integrada de ferramentas No Code (Microsoft Forms e Planner) e Low Code (Power Automate e Power BI), possibilitando criar uma interface de cadastro e planejamento, integrados a um dashboard para análise de resultados.
-
-## Referências
+## REFERÊNCIAS
 
 GARONCE FOTOVOLTAICA. Garonce Fotovoltaica, 2025. Disponível em: https://garoncefotovoltaica.com/ Acesso em: 25 fev. 2025.
 
@@ -154,4 +201,12 @@ GREENER. Boletim M&A: confira análise de 2024 e projeções para 2025. Canal So
 YELLOT. Energia Solar em 2024: 5 tendências para o mercado. Yellot, 2024. Disponível em: https://yellot.com.br/tecnologia-e-inovacao/energia-solar-em-2024-5-tendencias-para-o-mercado/. Acesso em: 25 fev. 2025.
 
 REUTERS. Brazil's grid caps power from wind and solar, threatening renewable projects. Reuters, 2024. Disponível em: https://www.reuters.com/business/energy/brazils-grid-caps-power-wind-solar-threatening-renewable-projects-2024-08-22/. Acesso em: 25 fev. 2025.
+
 REUTERS. Enel cautious on US solar panel project, committed to Brazil grids. Reuters, 2024. Disponível em: https://www.reuters.com/business/energy/enel-cautious-us-solar-panel-project-committed-brazil-grids-2024-11-18/. Acesso em: 25 fev. 2025.
+
+ABREU, Jacqueline de Souza. Proteção de dados pessoais e persecução criminal à luz da LGPD. Revista do Advogado, São Paulo, v. 39, n. 144, p. 149-153, nov. 2019.
+
+VOIGT, Paul, and Axel von dem Bussche. The EU General Data Protection Regulation (GDPR): A Practical Guide. Springer, 2017.
+
+CALDER, Alan. ISO/IEC 27001:2013: An Introduction to Information Security and the ISO27001 Standard. IT Governance Publishing, 2013.
+
