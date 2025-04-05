@@ -14,7 +14,7 @@ O projeto visa melhorar o gerenciamento das obras da empresa Garonce Soluções 
 * Renan Rodrigues
 
 
-## Orientador
+## Orientadora
 
 * Simone Fernandes Queiroz
 
